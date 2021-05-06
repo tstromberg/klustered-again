@@ -11,4 +11,4 @@ spec:
     securityContext:
       privileged: true
     command: [ "/bin/sh", "-c", "--" ]
-    args: [ "while true; sleep 86400; done" ]
+    args: [ "while true; do sleep 86400; done" ]

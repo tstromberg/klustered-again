@@ -2,7 +2,12 @@
 # Very basic DoS attack against etcd
 readonly cpath=$1
 readonly url=$2
-readonly key=$3
+
+if [[ "$3" == "random" ]]; then
+  readonly key=$RANDOM
+else
+  readonly key=$3
+fi
 
 while [ ! -f /tmp/stop ]; do
   # about the largest data size we can insert at once
