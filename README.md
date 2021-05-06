@@ -31,7 +31,7 @@ Basic etcd DoS attack via resource exhaustion.
 
 ## Usage
 
-`./evil.sh`
+`./do-evil.sh`
 
 ## Other notes
 
